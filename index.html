@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ShapedTheme">
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="assets/images/">
+
+    <title></title>
+
+    <!-- common css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/funciones.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+    .opcionPrincipal{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 50px;
+    position:relative;
+}
+.seccion{
+    width:100%;
+    height:700px;
+    overflow:hidden;
+    min-width: 320px;
+}
+#quienesSomos{
+    background-color:#f00;
+    position:relative;
+}
+.slider{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+
+    .slide{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:700px;
+}
+
+    .slide:nth-child(1){
+        background-image:url(assets/images/esferas.jpg);
+       background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        animation:emulador1 20s infinite;
+}   
+    
+   .slide:nth-child(2){
+        background:url(assets/images/esferas.jpg) no-repeat fixed;
+        background-size:cover;
+        animation:emulador2 20s infinite;
+}
+
+    .slide:nth-child(3){
+        background:url(assets/images/esferas.jpg) no-repeat fixed;
+        background-size:cover;
+        animation:emulador3 20s infinite;
+}
+
+    .slide:nth-child(4){
+        background:url(assets/images/esferas.jpg) no-repeat fixed; /*No-repeat sirve para evitar el mosaico, fixed lo mantiene fija aún haciendo scroll*/
+        background-size:cover;
+        animation:emulador4 20s infinite;   /*Nombre, duración, repetición*/
+    }
+    
+    #empresa{
+        font-size:8rem;
+        font-family:'Mountains of Christmas', cursive;
+        color:#000f;
+        text-shadow:0px 4px 1px red;
+        letter-spacing:4px;
+        position:relative;
+        top:35%;
+        left:60%;
+        padding-top:05px;
+        padding-left:200px;
+        border-radius:0px 10px;
+        background-color:rgba(255,255,255,0.5);
+        box-shadow:-10px 10px 25px #000;
+    }
+    
+    #logo{
+        position:absolute;
+        top:-20px;
+        left:-10px;
+        animation:mueveLogo 2s linear 1; /*Nombre, duración, ritmo (de manera continua), repetición (1 vez)*/
+        width: 160px;
+        height: 160px;
+    }
+    </style>
+</head>
+
+<body>
+
+<!-- header area-->
+<header>
+    <div class="welcome-text-area">
+        <div class="container">
+            <div class="pull-left welcome-text">
+                <p>Bienvenido a Muñelucos <a href='index.php?inicio=1'>  Iniciar Sesion</a> or <a href='index.php?inicio=2'>Registrarse</a></p>
+            </div>
+ 
+            <div class="social-links pull-right">
+                <ul>
+                    <li><a href=""> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href=""> <i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-logo-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 hidden-xs">
+                    <div class="call-us pull-left">
+                        <p><i class="fa fa-phone"></i>(771)165-55-92</p>
+                        <p><i class="fa fa-envelope"></i>munelucos@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="logo text-center">
+                        <a href="index.php?accion=galeria">
+                            <img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="pull-right user-profile-link cart-total">
+                        <ul>
+                            <li>
+                                <div class="shopping-cart">
+                                    <a href="index.php?accion=carrito">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="cart-count"></span>
+                                        <span>{TOTAL}</span>
+                                       
+                                    </a>
+
+
+                                </div>
+                                
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+
+
+        </div>
+    </nav>
+
+</header>
+
+<!-- home area-->
+<section id="home">
+   
+     <section id="quienesSomos" class="seccion">
+            <div class="slider">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            </div>
+                </div>  
+            <p id="empresa">
+                <img id="logo" src="assets/images/logo.png"/>
+               MUÑELUCOS
+            </p>
+
+
+        </div>
+        </div>
+    </div>
+            
+</section>
+
+
+            
+
+</section>
+<div class="card bg-dark text-white">
+  <img class="card-img" src="assets/images/banner_navideno.png" alt="Card image">
+  <div class="card-img-overlay">
+    <!--<h4 class="card-title">Card title</h4>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>-->
+  </div>
+</div>
+
+<!--process area-->
+<
+<!-- arrival area-->
+<!-- Page Features -->
+      <div class="row text-center">
+        <!--GALLERY-->
+         <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/Carrito/productos/{FOTO}" alt="">
+            <div class="card-body">
+              <h4 class="card-title">{NOMBRE}</h4>
+              <p class="card-text">               
+                 {DESCRIPCION}</p>
+                <h3>${PRECIO}</h3>
+            </div>
+            <div class="card-footer">
+             <a href='?item={ID}&&accion=agregar' class= "btn btn-dark" id="Cart"> Comprar!</a>
+            </div>
+          </div>
+        </div>
+          <!--GALLERY--> 
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-10 col-xs-offset-1">
+                <div class="single-shipping">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-car"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="text-uppercase">Envío gratis</h4>
+                            <p>A través de nuestro página oficial en Mercado Libre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  col-sm-4  col-xs-10 col-xs-offset-1">
+                <div class="single-shipping">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-headphones"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="text-uppercase">24/7 Atención a clientes</h4>
+                            <p>Atención y resolución de dudas las 24 hrs del día a nuestros clientes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4  col-sm-4  col-xs-10 col-xs-offset-1">
+                <div class="single-shipping no-border">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="text-uppercase">Devolución de dinero</h4>
+                            <p>Si no recibes el producto en el plazo acordado te devolveremos tu dinero 
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<section class="footer-icon">
+    <div class="container">
+        <div class="pull-left social-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                
+                <li><a href=""><img src="assets/images/google.png" alt=""></a></li>
+                
+                <li><a href=""><img src="assets/images/pinterest.png" alt=""></a></li>
+                
+            </ul>
+        </div>
+        <div class="pull-right pay-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/masaterd.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/paypal.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="copy text-center">
+    <p>&copy; 2017 Muñelucos .  Derechos Reservados</p>
+</footer>
+<!-- js files -->
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

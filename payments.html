@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ShapedTheme">
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="assets/images/">
+
+    <title></title>
+
+    <!-- common css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/funciones.js"></script>
+
+</head>
+
+<body>
+
+<!-- header area-->
+<header>
+    <div class="welcome-text-area">
+        <div class="container">
+            <div class="pull-left welcome-text">
+                <p>Bienvenido a Muñelucos <a href='index.php?inicio=1'>  Iniciar Sesion</a> or <a href='index.php?inicio=2'>Registrarse</a></p>
+            </div>
+ 
+            <div class="social-links pull-right">
+                <ul>
+                    <li><a href=""> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href=""> <i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-logo-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 hidden-xs">
+                    <div class="call-us pull-left">
+                        <p><i class="fa fa-phone"></i>(771)165-55-92</p>
+                        <p><i class="fa fa-envelope"></i>munelucos@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="logo text-center">
+                        <a href="index.php?accion=galeria">
+                            <img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="pull-right user-profile-link cart-total">
+                        <ul>
+                            <li>
+                                <div class="shopping-cart">
+                                    <a href="">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="cart-count"></span>
+                                        <span>$000.00</span>
+                                    </a>
+                                    </div>
+                                    </li>
+                                    </ul>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                   <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+
+
+        </div>
+    </nav>
+
+</header>
+                                    
+
+
+
+
+<!-- arrival tab area-->
+<div class="container">
+    <div class="row">
+        <div class="tab-content">
+            
+
+
+
+<!-- Page Features -->
+      <div class="row text-center">
+        <table id='ticket' border="1">
+                    
+                                         
+            <tr>
+                <td colspan='4'>Fecha: {FECHA}</td>
+            </tr>
+                                
+            <tr>
+                <th>Cantidad</th>
+                <th>Nombre</th>
+                <th>Precio Unitario</th>
+                <th>Importe</th>
+            </tr>
+            <!--TICKET-->
+            <tr>
+                <th>{CANTIDAD}</th>
+                <th>{NOMBRE}</th>
+                <th>${PRECIO}.00</th>
+                <th>${IMPORTE}.00</th>
+            </tr>
+                <!--TICKET-->
+
+            <tr>
+                <td colspan='2'></td>
+                <td> Subtotal:</td>
+                <td> {SUBTOTAL}</td>
+            </tr>
+            <tr>
+                <td colspan='2'> </td>
+                <td> Iva:</td>
+                <td> {IVA}</td>
+            </tr>
+            <tr>
+                <td colspan='2'></td>
+                <td> Total:</td>
+                <td> {TOTAL}</td>
+            </tr>
+        </table>
+          
+          <form name='tipo_pago' action="" method='post'>
+            <select name='tipo'>
+                    <option value='1'>Efectivo</option>
+                    <option value='2'>Crédito</option> 
+            </select>
+        <input type='submit' name='tip' value='Elegir'/> 
+        </form>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+ <a href="index.php?accion=galeria"> Comprar Más</a> &nbsp;  &nbsp; &nbsp;
+ <a href="#"> Mostrar Resumen</a>   
+
+</div>
+</div>
+</body>
+
+
+
+
+<!-- special offer area-->
+
+<section class="footer-icon">
+    <div class="container">
+        <div class="pull-left social-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/twi.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/google.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/youtube.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/pinterest.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/linkin.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="pull-right pay-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/masaterd.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/paypal.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="copy text-center">
+    <p>&copy; 2017 Muñelucos .  Derechos Reservados</p>
+</footer>
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>

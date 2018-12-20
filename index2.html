@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ShapedTheme">
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="assets/images/">
+
+    <title></title>
+
+    <!-- common css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="js/funciones.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+    .opcionPrincipal{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 50px;
+    position:relative;
+}
+.seccion{
+    width:100%;
+    height:700px;
+    overflow:hidden;
+    min-width: 320px;
+}
+#quienesSomos{
+    background-color:#f00;
+    position:relative;
+}
+.slider{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+
+    .slide{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:100%;
+        height:700px;
+}
+
+    .slide:nth-child(1){
+        background-image:url(assets/images/01.png);
+       background-repeat:no-repeat;
+        background-size:cover;
+        background-attachment:fixed;
+        animation:emulador1 20s infinite;
+}   
+    
+    .slide:nth-child(2){
+        background:url(assets/images/04.png) no-repeat fixed;
+        background-size:cover;
+        animation:emulador2 20s infinite;
+}
+
+    .slide:nth-child(3){
+        background:url(assets/images/03.jpeg) no-repeat fixed;
+        background-size:cover;
+        animation:emulador3 20s infinite;
+}
+
+    .slide:nth-child(4){
+        background:url(assets/images/01.png) no-repeat fixed; /*No-repeat sirve para evitar el mosaico, fixed lo mantiene fija aún haciendo scroll*/
+        background-size:cover;
+        animation:emulador4 20s infinite;   /*Nombre, duración, repetición*/
+    }
+    
+    #empresa{
+        font-size:7rem;
+        font-family:"Comic Sans MS";
+        color:#000f;
+        text-shadow:0px 4px 1px #006Ff0;
+        letter-spacing:4px;
+        position:relative;
+        top:35%;
+        left:60%;
+        padding-top:05px;
+        padding-left:200px;
+        border-radius:0px 10px;
+        background-color:rgba(255,255,255,0.5);
+        box-shadow:-10px 10px 25px #000;
+    }
+    
+    #logo{
+        position:absolute;
+        top:-20px;
+        left:-10px;
+        animation:mueveLogo 2s linear 1; /*Nombre, duración, ritmo (de manera continua), repetición (1 vez)*/
+        width: 140px;
+        height: 140px;
+    }
+    </style>
+</head>
+
+<body>
+
+<!-- header area-->
+<header>
+    <div class="welcome-text-area">
+        <div class="container">
+            <div class="pull-left welcome-text">
+                <p>Bienvenido a Muñelucos <a href='index.php?inicio=1'>  Iniciar Sesion</a> or <a href='index.php?inicio=2'>Registrarse</a></p>
+            </div>
+ 
+            <div class="social-links pull-right">
+                <ul>
+                    <li><a href=""> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""> <i class="fa fa-google-plus"></i></a></li>
+                    <li><a href=""> <i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-logo-area">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 hidden-xs">
+                    <div class="call-us pull-left">
+                        <p><i class="fa fa-phone"></i>(771)165-55-92</p>
+                        <p><i class="fa fa-envelope"></i>munelucos@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="logo text-center">
+                        <a href="index.php?accion=galeria">
+                            <img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="pull-right user-profile-link cart-total">
+                        <ul>
+                            <li>
+                                <div class="shopping-cart">
+                                    <a href="index.php?accion=carrito">
+                                        <i class="fa fa-shopping-basket"></i>
+                                        <span class="cart-count"></span>
+                                        <span>{TOTAL}</span>
+                                        <br>
+                                       
+                                    </a>
+
+
+                                </div>
+                                
+                            </li>
+                            <li>
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+
+        </div>
+    </nav>
+
+</header>
+
+
+<!-- Page Features -->
+      <div class="row text-center">
+        <!--GALLER-->
+         <div class="container">
+ <h1> Detalle de compra </h1>
+    
+    <div class="mbr-section__container container mbr-section__container--std-top-padding" style="padding-top: 93px;">
+ <table border="1">
+    <tr>
+           <th>IMAGEN</th>
+           <th>NOMBRE</th>
+           <th>DESCRIPCION</th> 
+           <th>PRECIO</th>
+           <th>CANTIDAD</th>
+           <th>IMPORTE</th>
+           <th>AGREGAR</th>
+           <th>BORRAR</th>
+         
+    </tr>
+        <!--CART-->
+          <tr>
+             <td><img src="assets/Carrito/Productos/{IMAGEN}" width="200" height="150"/></td>
+             <td>{NOMBRE}</td>
+             <td>{DESCRIPCION}</td>
+             <td>{PRECIO}</td>
+             <td>{CANTIDAD}</td>
+             <td>{IMPORTE}</td>
+             <td><a href="index.php?item={ID}&&accion=agregar"><img src="assets/Carrito/public_html/img/Agregar.png" width="50px" height="50px"/>Agregar</a></td>
+             <td><a href="index.php?item={ID}&&accion=reducir"><img src="assets/Carrito/public_html/img/Disminuir.png" width="50px" height="50px"/>Borrar</a></td>
+             
+           </tr> 
+        <!--CART-->
+     </table>     
+     <a href="index.php">Comprar más</a>
+     <a href="index.php?item={ID}&&accion=vaciar">Vaciar carrito</a>
+     <a href="index.php?item={ID}&&accion=ticket">Mostrar resumen</a>
+
+
+
+    </div>
+</div>
+        
+        <!--GALLER-->
+       
+</div>
+
+
+
+
+
+
+<section class="footer-icon">
+    <div class="container">
+        <div class="pull-left social-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/facebook.png" alt=""></a></li>
+                
+                <li><a href=""><img src="assets/images/google.png" alt=""></a></li>
+                
+                <li><a href=""><img src="assets/images/pinterest.png" alt=""></a></li>
+                
+            </ul>
+        </div>
+        <div class="pull-right pay-icon">
+            <ul>
+                <li><a href=""><img src="assets/images/visa.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/masaterd.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/paypal.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer class="copy text-center">
+    <p>&copy; 2017 Muñelucos .  Derechos Reservados</p>
+</footer>
+<!-- js files -->
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+
+</body>
+</html>
