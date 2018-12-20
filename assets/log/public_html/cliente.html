@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cliente</title>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+    	{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 15px;
+	color: purple;
+	background-image: url('../img/pinguinoazul.jpeg');
+}
+}
+body{
+	font-size: 0px;
+	padding-top: 40px;
+	color: red;
+}
+h1{
+	font-size: 75px;
+	color: #9f3;
+	font-family:Helvetica;
+	text-align: center;
+	padding-top: 1%;
+
+}
+h4{
+	font-size: 50px;
+	color: #ff3;
+	font-family:Helvetica;
+	text-align: center;
+	padding-top: 1%;
+}
+section{
+	left: 50%;
+	padding-top: 3%;
+}
+
+.caja{
+margin-left: 30%;
+height: 35px;
+width: 35%;
+border: 1px solid #666;
+border-radius: 10px;
+background-color: rgba(222,222,222,0.9);
+background-repeat: no-repeat;
+padding: 5px;
+padding-left: 35px;
+margin-top: 3px;
+margin-bottom: 5px;
+color: #333;
+font-size: 0.8rem;
+font-family: Arial;
+}
+
+.boton{
+	background-color: #f6f;
+width: 100px;
+height: 30px;
+color: #000	;
+border-radius: 0px 10px;
+margin: 10px;
+padding-left: 0px;
+cursor: pointer;
+margin-left: 45%;
+}
+    </style>
+</head>
+<body>
+<h1>Ingresa tus datos personales</h1>
+	<section>
+		<form action=""  method="post">
+		<input type="text" class="caja" name="nombrec" placeholder="Introduce tu nombre"/>
+			<input type="text" class="caja" name="ciudadc" placeholder="Introduce tu ciudad"/>
+            <input type="text" class="caja" name="callec" placeholder="Introduce tu calle"/>
+            <input type="text" class="caja" name="registro" placeholder="Introduce tu id de registro"/>
+
+   			<input type="submit" class="boton" name="accion" value="Almacenar Cliente"/> 
+		</form>
+        
+	</section>
+</body>
+</html>
