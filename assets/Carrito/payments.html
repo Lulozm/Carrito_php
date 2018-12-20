@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tienda Online</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="public_html/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="public_html/css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="menu">
+      <div class="container">
+        <a class="navbar-brand" href="#">Hooligans</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.php?accion=galeria">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">su total es: {TOTAL}</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">Lleva: {ACUM} items</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      
+
+      <!-- Page Features -->
+      <div class="row text-center">
+        <table id='ticket' border="1">
+					
+			 							 
+ 			<tr>
+				<td colspan='4'>Fecha: {FECHA}</td>
+			</tr>
+								
+			<tr>
+				<th>Cantidad</th>
+				<th>Nombre</th>
+				<th>Precio Unitario</th>
+				<th>Importe</th>
+ 			</tr>
+ 			<!--TICKET-->
+ 			<tr>
+				<th>{CANTIDAD}</th>
+				<th>{NOMBRE}</th>
+				<th>${PRECIO}.00</th>
+				<th>${IMPORTE}.00</th>
+ 			</tr>
+ 				<!--TICKET-->
+
+ 			<tr>
+				<td colspan='2'></td>
+				<td> Subtotal:</td>
+				<td> {SUBTOTAL}</td>
+			</tr>
+			<tr>
+				<td colspan='2'> </td>
+				<td> Iva:</td>
+				<td> {IVA}</td>
+			</tr>
+			<tr>
+				<td colspan='2'></td>
+				<td> Total:</td>
+				<td> {TOTAL}</td>
+			</tr>
+		</table>
+          
+          <form name='tipo_pago' action="" method='post'>
+			<select name='tipo'>
+					<option value='1'>Efectivo</option>
+					<option value='2'>Crédito</option> 
+			</select>
+		<input type='submit' name='tip' value='Elegir'/> 
+		</form>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+ <a href="index.php?accion=galeria"> Comprar Más</a> &nbsp;  &nbsp; &nbsp;
+ <a href="#"> Mostrar Resumen</a>   
+      
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="public_html/vendor/jquery/jquery.min.js"></script>
+    <script src="public_htmlvendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
